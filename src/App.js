@@ -18,12 +18,9 @@ const tempArr = [
 ];
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.fetch = this.fetch.bind(this);
-  }
 
-  fetch() {
+
+  fetch = () => {
     this.props.fetchPosts();
   }
 
@@ -35,7 +32,7 @@ class App extends React.Component {
 
     const { posts } = this.props;
     return (
-      <div className="App">
+      <div className="App" data-test='appComponent'>
         <Header />
         <section className="main">
           <Headline

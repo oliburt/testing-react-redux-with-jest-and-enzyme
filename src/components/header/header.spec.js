@@ -15,7 +15,7 @@ describe('Header Component', () => {
     })
 
     it('Should render without errors', () => {
-        console.log(component.debug())
+        // console.log(component.debug())
         const wrapper = findByDataTestAttribute(component, 'headerComponent');
         expect(wrapper.length).toBe(1);
     });
